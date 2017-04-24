@@ -9,6 +9,7 @@ body {
 .full-screen.cycle-slideshow {
 	height:100%;
 	margin-bottom: 50px;
+	overflow:hidden;
 	width:100%;
 }
 
@@ -23,10 +24,11 @@ body {
 	transform:scale(1);
 	transition-property: transform;
 	transition-timing-function: ease-in;
-	/* transition:transform 5s ease-in; */
+	/* transition-duration is set in the burns.js file */
 }
 
-.full-screen.cycle-slideshow > div.cycle-slide-active {
+.full-screen.cycle-slideshow > div.burns-slide {
 	transform:scale(1.05);
 }
+
 
