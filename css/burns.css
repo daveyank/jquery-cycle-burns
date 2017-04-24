@@ -1,0 +1,32 @@
+html,
+body {
+	height:100%;
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+
+.full-screen.cycle-slideshow {
+	height:100%;
+	margin-bottom: 50px;
+	width:100%;
+}
+
+.full-screen.cycle-slideshow > div {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	
+	height:100%;
+	width:100%;
+	
+	transform:scale(1);
+	transition-property: transform;
+	transition-timing-function: ease-in;
+	/* transition:transform 5s ease-in; */
+}
+
+.full-screen.cycle-slideshow > div.cycle-slide-active {
+	transform:scale(1.05);
+}
+
